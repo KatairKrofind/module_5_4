@@ -1,7 +1,7 @@
 class Building:
-    total = True
-    def __init__(self, *args):
+    total = 0
+    def __init__(self):
         for i in range(1, 41):
-            self.args = i
-            print(self.args)
+            Building.total += 1
+            print(Building.total)
 h = Building()
